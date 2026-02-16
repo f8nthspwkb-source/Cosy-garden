@@ -25,6 +25,29 @@ src/
   styles/        — CSS files, one per feature area
 ```
 
+## How Zach Ships Changes (Pull Requests)
+
+Zach, here's how your work gets from "done" to "live":
+
+1. **Every conversation creates a branch.** Think of a branch as a draft. Your changes live here while they're being worked on — the live game is untouched until you say go.
+
+2. **When you're happy, create a pull request (PR).** A PR is you saying "I'd like to publish these changes." It shows exactly what changed, and gives you a chance to review before anything goes live. Ask your agent to create the PR for you.
+
+3. **Merge the PR.** Once you're satisfied, merge it. This is the "publish" button — your changes go into the main game and deploy automatically. You can do this from the PR page on GitHub — there's a big green "Merge" button.
+
+4. **The game updates itself.** After merging, GitHub automatically rebuilds and publishes the game. Takes about a minute. No extra steps.
+
+**That's it.** Branch → PR → Merge → Live. If something goes wrong, nothing breaks — you just make another PR to fix it.
+
+### Quick Reference
+
+| What you want | What to say |
+|---|---|
+| Start working on something | Just describe it — a branch is created automatically |
+| See what changed | "Show me the diff" or check the PR on GitHub |
+| Publish your changes | "Create a pull request" then merge it on GitHub |
+| Undo something | "Revert the last change" — a new PR is created to undo it |
+
 ## Ground Rules
 
 1. **One feature per conversation.** If a request touches multiple systems, break it into steps.
@@ -35,9 +58,9 @@ src/
 
 ## Deployment
 
-The game is published via GitHub Pages. After making changes:
-- Build and deploy with `npm run deploy`
-- The live game is available at the repository's GitHub Pages URL
+The game deploys automatically via GitHub Actions whenever changes are merged to `main`. No manual steps required.
+
+**One-time setup (Dom):** Go to the repository's **Settings → Pages** and set the source to **GitHub Actions**.
 
 ## Current State
 
