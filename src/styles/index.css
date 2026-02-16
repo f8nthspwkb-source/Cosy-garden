@@ -1,0 +1,26 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body, #root { width: 100%; height: 100%; overflow: hidden; font-family: 'Nunito', sans-serif; background: #5cb8e4; }
+
+.welcome-screen { position: fixed; inset: 0; background: linear-gradient(135deg, #a8e063, #56ab2f); z-index: 1000; display: flex; align-items: center; justify-content: center; }
+.welcome-content { text-align: center; padding: 20px; max-width: 400px; }
+.welcome-content h1 { font-family: 'Fredoka One', cursive; font-size: 2rem; color: white; margin-bottom: 12px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); }
+.welcome-content p { font-size: 0.9rem; color: rgba(255, 255, 255, 0.95); margin-bottom: 24px; line-height: 1.5; }
+.welcome-buttons { display: flex; flex-direction: column; gap: 12px; }
+.welcome-btn { padding: 14px 28px; border: none; border-radius: 30px; font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 1rem; cursor: pointer; transition: all 0.2s; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); }
+.welcome-btn.new { background: linear-gradient(135deg, #fff9c4, #fff59d); color: #5a3a1a; }
+.welcome-btn.continue { background: linear-gradient(135deg, #fff, #f5f5f5); color: #4a2a0a; }
+.welcome-btn:active { transform: scale(0.95); }
+
+.slot-selector { position: fixed; inset: 0; background: rgba(0, 0, 0, 0.7); z-index: 1100; display: flex; align-items: center; justify-content: center; }
+.slot-panel { background: linear-gradient(160deg, #fffbf0, #fff8e6); border-radius: 20px; padding: 20px; max-width: 400px; width: 90%; box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3); }
+.slot-panel h2 { font-family: 'Fredoka One', cursive; font-size: 1.3rem; color: #56ab2f; margin-bottom: 16px; text-align: center; }
+.slot-list { display: flex; flex-direction: column; gap: 10px; margin-bottom: 16px; }
+.slot-item { background: linear-gradient(135deg, #fff, #f5f5f5); border: 2px solid #e0d8cc; border-radius: 14px; padding: 12px; cursor: pointer; transition: all 0.2s; }
+.slot-item:hover { transform: scale(1.02); border-color: #a8e063; }
+.slot-item.empty { opacity: 0.5; border-style: dashed; }
+.slot-name { font-family: 'Fredoka One', cursive; font-size: 0.9rem; color: #4a2a0a; margin-bottom: 4px; }
+.slot-info { font-size: 0.7rem; color: #8a6a4a; }
+.slot-cancel { width: 100%; padding: 10px; border: none; border-radius: 14px; background: #e0d8cc; color: #8a6a4a; font-family: 'Nunito', sans-serif; font-weight: 700; cursor: pointer; }
+
+.game-container { padding: 20px; color: white; font-family: 'Nunito', sans-serif; }
+.game-container h1 { font-family: 'Fredoka One', cursive; margin-bottom: 20px; }
